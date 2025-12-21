@@ -395,6 +395,310 @@ function App() {
           </div>
         </div>
       </section>
+
+      <section className="product-direction">
+        <div className="product-direction-container div-max-width div-margin">
+          <div className='product-direction-text'>
+            <div className='top-text'>
+              <span className='green'></span>
+              <p>Artificial Intelligence</p>
+              <svg
+                className="page-module__x5b50W__chevronLink"
+                style={{ '--icon-color': 'currentColor' }}
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                role="img"
+                focusable="false"
+                aria-hidden={true}
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+              >
+                <path d="M5.46967 11.4697C5.17678 11.7626 5.17678 12.2374 5.46967 12.5303C5.76256 12.8232 6.23744 12.8232 6.53033 12.5303L10.5303 8.53033C10.8207 8.23999 10.8236 7.77014 10.5368 7.47624L6.63419 3.47624C6.34492 3.17976 5.87009 3.17391 5.57361 3.46318C5.27713 3.75244 5.27128 4.22728 5.56054 4.52376L8.94583 7.99351L5.46967 11.4697Z" />
+              </svg>
+
+            </div>
+            <h1 className='Main-heading'>AI-assisted product development</h1>
+            <p className='body-text-gray'>
+              Linear for Agents. Choose from a variety of AI agents and start delegating work, from code generation to other technical tasks.
+            </p>
+            <button className="learn-more">
+              Learn more
+              <svg
+                className="page-module__x5b50W__chevronLink"
+                style={{ '--icon-color': 'currentColor' }}
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                role="img"
+                focusable="false"
+                aria-hidden={true}
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+              >
+                <path d="M5.46967 11.4697C5.17678 11.7626 5.17678 12.2374 5.46967 12.5303C5.76256 12.8232 6.23744 12.8232 6.53033 12.5303L10.5303 8.53033C10.8207 8.23999 10.8236 7.77014 10.5368 7.47624L6.63419 3.47624C6.34492 3.17976 5.87009 3.17391 5.57361 3.46318C5.27713 3.75244 5.27128 4.22728 5.56054 4.52376L8.94583 7.99351L5.46967 11.4697Z" />
+              </svg>
+
+            </button>
+          </div>
+
+          <div className="image">
+
+          </div>
+
+          <div className="product-card">
+            <div className='product-card-item padding-right'>
+              <p className='product-text'>Self-driving product operations</p>
+              <p className='body-text-gray'>Streamline your product development workflows with AI assistance for routine, manual tasks.</p>
+              <div className='product-item'>
+                <div className="page-module__QbE8ja__productIntelligenceIllustration page-module__QbE8ja__fadeRight">
+                  <span className="Text-sc-111816cf-0 hcrjwi">
+                    <div
+                      className="Flex-module__A66dmG__root Flex-module__A66dmG__align-center"
+                      style={{ gap: '6px' }}
+                    >
+                      <svg
+                        style={{ '--icon-color': '#9c9da1' }}
+                        width={16}
+                        height={16}
+                        viewBox="0 0 16 16"
+                        fill="#9c9da1"
+                        role="img"
+                        focusable="false"
+                        aria-hidden={true}
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M8.00098 11C8.41519 11 8.75098 11.3358 8.75098 11.75V14.25C8.75098 14.6642 8.41519 15 8.00098 15C7.58676 15 7.25098 14.6642 7.25098 14.25V11.75C7.25098 11.3358 7.58676 11 8.00098 11Z"
+                        />
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M2.2207 2.21973C2.5136 1.92683 2.98836 1.92683 3.28125 2.21973L8.53125 7.46973C8.82403 7.76263 8.82411 8.23742 8.53125 8.53027L3.28125 13.7803C2.98839 14.0731 2.51359 14.073 2.2207 13.7803C1.92783 13.4874 1.92787 13.0126 2.2207 12.7197L5.33691 9.60352C5.65187 9.28855 5.4288 8.75006 4.9834 8.75H1.75098C1.3368 8.75 1.00104 8.41416 1.00098 8C1.00098 7.58579 1.33676 7.25 1.75098 7.25H4.9834C5.42877 7.24994 5.65178 6.71146 5.33691 6.39648L2.2207 3.28027C1.92783 2.9874 1.92787 2.51262 2.2207 2.21973Z"
+                        />
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M9.9707 9.96973C10.2636 9.67683 10.7384 9.67683 11.0312 9.96973L13.7812 12.7197C14.0741 13.0126 14.0741 13.4874 13.7812 13.7803C13.4884 14.0731 13.0136 14.0731 12.7207 13.7803L9.9707 11.0303C9.67783 10.7374 9.67787 10.2626 9.9707 9.96973Z"
+                        />
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M14.251 7.25C14.6652 7.25 15.001 7.58579 15.001 8C15.001 8.41421 14.6652 8.75 14.251 8.75H11.751C11.3368 8.75 11.001 8.41421 11.001 8C11.001 7.58579 11.3368 7.25 11.751 7.25H14.251Z"
+                        />
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M12.7207 2.21973C13.0136 1.92683 13.4884 1.92683 13.7812 2.21973C14.0741 2.51262 14.0741 2.98738 13.7812 3.28027L11.0312 6.03027C10.7384 6.32311 10.2636 6.32315 9.9707 6.03027C9.67783 5.7374 9.67787 5.26262 9.9707 4.96973L12.7207 2.21973Z"
+                        />
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M8.00098 1C8.41519 1 8.75098 1.33579 8.75098 1.75V4.25C8.75098 4.66421 8.41519 5 8.00098 5C7.58676 5 7.25098 4.66421 7.25098 4.25V1.75C7.25098 1.33579 7.58676 1 8.00098 1Z"
+                        />
+                      </svg>
+
+                      <span className="page-module__QbE8ja__PIGradient">
+                        Triage Intelligence
+                      </span>
+                    </div>
+                  </span>
+                </div>
+                <div className='product-item-item'>
+                  <div className='product-item-child'>
+                    <div>Suggestions</div>
+                    <div>Duplicate of</div>
+                    <div>Related of</div>
+                  </div>
+                  <div className='product-item-dotted'>
+                    <div className='product-item-cont'>
+                      <div className='product-item-dotted-btn'>
+                        <div className="avatarContainer">
+                          <img
+                            src="https://webassets.linear.app/images/ornj730p/production/e522be49c136f6b81a1c5cb3aa7b2075f78404c0-1305x1444.jpg?w=72&q=95&auto=format&dpr=2"
+                            width={16}
+                            height={16}
+                            alt="Avatar of Nan"
+                            className="avatarImg"
+                          />
+                        </div>
+                        <p>nan</p>
+                      </div>
+                      <div className='product-item-dotted-btn need-width'>
+                        <div className="avatarContainer">
+                          <svg
+                            width={16}
+                            height={16}
+                            viewBox="0 0 16 16"
+                            fill="#5e6ad2"
+                            xmlns="http://www.w3.org/2000/svg"
+                            className='avatarImg'
+                          >
+                            <path
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              d="M10 2.5h.5a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1H6V3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm-7 1A2.5 2.5 0 0 1 5.5 1h5A2.5 2.5 0 0 1 13 3.5v9a2.5 2.5 0 0 1-2.5 2.5h-5A2.5 2.5 0 0 1 3 12.5z"
+                            />
+                          </svg>
+
+                        </div>
+                        <p className='flex-centered'>Mobile App Refractor</p>
+                      </div>
+                      <div className='product-item-dotted-btn'>
+                        <div className="avatarContainer">
+                          <div
+                            className="avatarImg"
+                            style={{ width: '16px', height: '16px' }}
+                          >
+                            <div
+                              style={{
+                                width: '9px',
+                                height: '9px',
+                                background: '#EC6A5E',
+                                borderRadius: '50%',
+                                marginRight: '-1px',
+                              }}
+                            ></div>
+                          </div>
+
+                        </div>
+                        <p className='flex-centered'>Slack</p>
+                      </div>
+
+
+
+                      <div className="product-hover">
+                        <div className='product-item-dotted-head'>
+                          <div className="avatarContainer">
+                            <svg
+                              width={16}
+                              height={16}
+                              viewBox="0 0 16 16"
+                              fill="#5e6ad2"
+                              xmlns="http://www.w3.org/2000/svg"
+                              className='avatarImg'
+                            >
+                              <path
+                                fillRule="evenodd"
+                                clipRule="evenodd"
+                                d="M10 2.5h.5a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1H6V3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm-7 1A2.5 2.5 0 0 1 5.5 1h5A2.5 2.5 0 0 1 13 3.5v9a2.5 2.5 0 0 1-2.5 2.5h-5A2.5 2.5 0 0 1 3 12.5z"
+                              />
+                            </svg>
+
+                          </div>
+                          <p className='flex-head'>Mobile App Refractor</p>
+                        </div>
+                        <p className='Optimize'>Optimize mobile app performance</p>
+                        <div className='flex-one'>
+                          <div>
+                            <p className='flex-head'>In progress</p>
+                          </div>
+                          <div>
+                            <p className='flex-head'>Medium</p>
+                          </div>
+                        </div>
+                        <div className="suggestion">
+                          <p className='flex-head'>
+                            Why this project was suggested?
+                          </p>
+                          <p className='current-issue'>
+                            The current issue seems to be a mobile app related bug that would fit well within the scope of this project.
+                          </p>
+                        </div>
+
+                        <div className='suggestion-btn-cont'>
+                          <button className='suggestion-btn'>
+                            Accept Suggestion
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className='ENG'>
+                      <div className='ENG-cont'>
+                        <svg
+                          className=""
+                          style={{ '--icon-color': 'var(--color-text-quaternary)' }}
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="var(--color-text-quaternary)"
+                          role="img"
+                          focusable="false"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M14.9408 8.91426L12.9576 8.65557C12.9855 8.4419 13 8.22314 13 8C13 7.77686 12.9855 7.5581 12.9576 7.34443L14.9408 7.08573C14.9799 7.38496 15 7.69013 15 8C15 8.30987 14.9799 8.61504 14.9408 8.91426ZM14.4688 5.32049C14.2328 4.7514 13.9239 4.22019 13.5538 3.73851L11.968 4.95716C12.2328 5.30185 12.4533 5.68119 12.6214 6.08659L14.4688 5.32049ZM12.2615 2.4462L11.0428 4.03204C10.6981 3.76716 10.3188 3.54673 9.91341 3.37862L10.6795 1.53116C11.2486 1.76715 11.7798 2.07605 12.2615 2.4462ZM8.91426 1.05917L8.65557 3.04237C8.4419 3.01449 8.22314 3 8 3C7.77686 3 7.5581 3.01449 7.34443 3.04237L7.08574 1.05917C7.38496 1.02013 7.69013 1 8 1C8.30987 1 8.61504 1.02013 8.91426 1.05917ZM5.32049 1.53116L6.08659 3.37862C5.68119 3.54673 5.30185 3.76716 4.95716 4.03204L3.73851 2.4462C4.22019 2.07605 4.7514 1.76715 5.32049 1.53116ZM2.4462 3.73851L4.03204 4.95716C3.76716 5.30185 3.54673 5.68119 3.37862 6.08659L1.53116 5.32049C1.76715 4.7514 2.07605 4.22019 2.4462 3.73851ZM1.05917 7.08574C1.02013 7.38496 1 7.69013 1 8C1 8.30987 1.02013 8.61504 1.05917 8.91426L3.04237 8.65557C3.01449 8.4419 3 8.22314 3 8C3 7.77686 3.01449 7.5581 3.04237 7.34443L1.05917 7.08574ZM1.53116 10.6795L3.37862 9.91341C3.54673 10.3188 3.76716 10.6981 4.03204 11.0428L2.4462 12.2615C2.07605 11.7798 1.76715 11.2486 1.53116 10.6795ZM3.73851 13.5538L4.95716 11.968C5.30185 12.2328 5.68119 12.4533 6.08659 12.6214L5.32049 14.4688C4.7514 14.2328 4.22019 13.9239 3.73851 13.5538ZM7.08574 14.9408L7.34443 12.9576C7.5581 12.9855 7.77686 13 8 13C8.22314 13 8.4419 12.9855 8.65557 12.9576L8.91427 14.9408C8.61504 14.9799 8.30987 15 8 15C7.69013 15 7.38496 14.9799 7.08574 14.9408ZM10.6795 14.4688L9.91341 12.6214C10.3188 12.4533 10.6981 12.2328 11.0428 11.968L12.2615 13.5538C11.7798 13.9239 11.2486 14.2328 10.6795 14.4688ZM13.5538 12.2615L11.968 11.0428C12.2328 10.6981 12.4533 10.3188 12.6214 9.91341L14.4688 10.6795C14.2328 11.2486 13.924 11.7798 13.5538 12.2615Z"
+                          />
+                        </svg>
+
+                        <p className='ENG-text'>
+                          ENG-1419
+                        </p>
+                      </div>
+                      <p className='ENG-para'>
+                        Loading spinner keeps running on startup
+                      </p>
+                    </div>
+                    <div className='ENG'>
+                      <div className='ENG-cont'>
+                        <svg
+                          className=""
+                          style={{ '--icon-color': 'var(--color-text-quaternary)' }}
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="var(--color-text-quaternary)"
+                          role="img"
+                          focusable="false"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M14.9408 8.91426L12.9576 8.65557C12.9855 8.4419 13 8.22314 13 8C13 7.77686 12.9855 7.5581 12.9576 7.34443L14.9408 7.08573C14.9799 7.38496 15 7.69013 15 8C15 8.30987 14.9799 8.61504 14.9408 8.91426ZM14.4688 5.32049C14.2328 4.7514 13.9239 4.22019 13.5538 3.73851L11.968 4.95716C12.2328 5.30185 12.4533 5.68119 12.6214 6.08659L14.4688 5.32049ZM12.2615 2.4462L11.0428 4.03204C10.6981 3.76716 10.3188 3.54673 9.91341 3.37862L10.6795 1.53116C11.2486 1.76715 11.7798 2.07605 12.2615 2.4462ZM8.91426 1.05917L8.65557 3.04237C8.4419 3.01449 8.22314 3 8 3C7.77686 3 7.5581 3.01449 7.34443 3.04237L7.08574 1.05917C7.38496 1.02013 7.69013 1 8 1C8.30987 1 8.61504 1.02013 8.91426 1.05917ZM5.32049 1.53116L6.08659 3.37862C5.68119 3.54673 5.30185 3.76716 4.95716 4.03204L3.73851 2.4462C4.22019 2.07605 4.7514 1.76715 5.32049 1.53116ZM2.4462 3.73851L4.03204 4.95716C3.76716 5.30185 3.54673 5.68119 3.37862 6.08659L1.53116 5.32049C1.76715 4.7514 2.07605 4.22019 2.4462 3.73851ZM1.05917 7.08574C1.02013 7.38496 1 7.69013 1 8C1 8.30987 1.02013 8.61504 1.05917 8.91426L3.04237 8.65557C3.01449 8.4419 3 8.22314 3 8C3 7.77686 3.01449 7.5581 3.04237 7.34443L1.05917 7.08574ZM1.53116 10.6795L3.37862 9.91341C3.54673 10.3188 3.76716 10.6981 4.03204 11.0428L2.4462 12.2615C2.07605 11.7798 1.76715 11.2486 1.53116 10.6795ZM3.73851 13.5538L4.95716 11.968C5.30185 12.2328 5.68119 12.4533 6.08659 12.6214L5.32049 14.4688C4.7514 14.2328 4.22019 13.9239 3.73851 13.5538ZM7.08574 14.9408L7.34443 12.9576C7.5581 12.9855 7.77686 13 8 13C8.22314 13 8.4419 12.9855 8.65557 12.9576L8.91427 14.9408C8.61504 14.9799 8.30987 15 8 15C7.69013 15 7.38496 14.9799 7.08574 14.9408ZM10.6795 14.4688L9.91341 12.6214C10.3188 12.4533 10.6981 12.2328 11.0428 11.968L12.2615 13.5538C11.7798 13.9239 11.2486 14.2328 10.6795 14.4688ZM13.5538 12.2615L11.968 11.0428C12.2328 10.6981 12.4533 10.3188 12.6214 9.91341L14.4688 10.6795C14.2328 11.2486 13.924 11.7798 13.5538 12.2615Z"
+                          />
+                        </svg>
+
+                        <p className='ENG-text'>
+                          ENG-1820
+                        </p>
+                      </div>
+                      <p className='ENG-para'>
+                        Loading spinner keeps running on startup
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div className='product-card-item padding-left'>
+              <p className='product-text'>Linear MCP</p>
+              <p className='body-text-gray'>Connect Linear to your favorite tools including Cursor, Claude, ChatGPT, and more.</p>
+              <img
+                src="https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/d71d1361-919f-421d-d24d-e9b6b2930900/f=auto,dpr=2,q=95,fit=scale-down,metadata=none"
+                alt="Descriptive Alt Text"
+                width={992}
+                height={720}
+                loading="lazy"
+                decoding="async"
+                className="page-module__x5b50W__maskRight Image-module__CYTY7q__root"
+                style={{ color: "transparent", objectFit: "scale-down" }}
+              />
+
+
+              
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
