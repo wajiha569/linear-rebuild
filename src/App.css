@@ -1553,7 +1553,7 @@ HERO SECTION
 
 .collaborate-card > .card-big {
   flex: 0 0 0%;
-  scroll-snap-align: start; //🔥 “When scrolling stops, align the start edge of this item with the snap position of the scroll container.”
+  scroll-snap-align: start;
 }
 
 .card-big {
