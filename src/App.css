@@ -241,183 +241,144 @@ NAV BAR
 }
 
 /* NAV */
+/* --- Navigation Base --- */
+/* --- Navigation Core (Delete all other nav/NAV blocks) --- */
 nav {
-  position: fixed; /* better than sticky for navs */
+  position: fixed !important; /* Force fixed position globally */
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999;
-  background-color: rgba(11, 11, 11, 0.99);
-  border-bottom: 1px solid var(--header-border);
   height: 64px;
+  z-index: 10000;
+  background-color: rgba(11, 11, 11, 0.98);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--header-border, rgba(255, 255, 255, 0.08));
   display: flex;
+  align-items: center;
 }
+
 .nav-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
   justify-content: space-between;
-  z-index: 100;
-  position: static;
-}
-.btn-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-.body-btn-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-@media (max-width: 641px) {
-  .body-btn-container button {
-    width: 100%;
-    max-width: 320px;
-    white-space: normal;
-    text-align: center;
-  }
+  width: 100%;
+  padding: 0 24px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .logo {
+  height: 18px; /* Slightly smaller for better mobile fit */
   width: auto;
-  height: 20px;
+  flex-shrink: 0;
 }
-.burger-btn {
-  height: 64px;
-  margin-left: 15px;
-  border: none;
-  display: none;
-}
+
 .nav-content {
   display: flex;
   gap: 8px;
 }
+
+/* Base button style */
 .nav-btn-content {
   background: transparent;
-  color: var(--color-text-tertiary);
+  color: #8a8f98;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 32px;
   font-size: 13px;
-  font-weight: var(--font-weight-medium);
-  border-radius: 8px;
   padding: 0 12px;
   cursor: pointer;
-  font-weight: 400;
   border: none;
-  transition: all 0.16s var(--ease-out-quad);
+  transition: all 0.2s ease;
+  border-radius: 8px;
 }
+
 .nav-btn-content:hover {
-  transition: all 0.16s var(--ease-out-quad);
   color: #fff;
   background-color: rgba(255, 255, 255, 0.08);
 }
-.nav-content {
+
+.btn-container {
   display: flex;
+  align-items: center;
   gap: 8px;
 }
+
+.burger-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  margin-left: 8px;
+}
+
+/* --- Responsive Behavior --- */
+
 @media (max-width: 1025px) {
   .now {
     display: none;
   }
 }
-@media (max-width: 997px) {
-  nav {
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
+
+@media (max-width: 768px) {
+  .burger-btn {
+    display: flex;
   }
 
-  .nav-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-}
-@media (max-width: 768px) {
   .nav-content {
     position: fixed;
     top: 64px;
     left: 0;
-    right: 0;
     width: 100%;
-    height: 100vh;
-    margin: 0;
-    padding: 32px 24px;
-    background-color: rgba(11, 11, 11, 0.99);
-    z-index: 45;
-    display: flex;
+    height: calc(100vh - 64px);
+    background-color: #0b0b0b;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    padding: 24px;
+    gap: 16px;
 
-    /* THE FIX: prevent blocking clicks when closed */
+    /* Animation States */
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transform: translateY(-10px); /* Add a slight slide effect */
-    transition: all 0.3s var(--ease-out-quad);
-  }
-  .burger-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    cursor: pointer;
-  }
-  .hide {
-    display: none;
-  }
-  .nav-btn-content {
-    width: 100%;
-    justify-content: flex-start;
-    font-size: 18px; /* Larger text for mobile links */
-    height: 48px;
-    padding: 0;
-  }
-  .nav-btn-content:hover {
-    background-color: transparent;
-    color: var(--color-text-tertiary);
+    transform: translateY(-10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  /* Toggle class for visibility (add via JS on burger click) */
   .nav-content.open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
     transform: translateY(0);
   }
+
+  .hide {
+    display: none;
+  }
   .nav-content.open .hide {
     display: flex;
   }
-  .cross1 {
-    transform: rotate(45deg);
-    transformorigin: center;
-    transition: 160ms var(--ease-out-quad);
-  }
-  .cross2 {
-    transform: rotate(-45deg);
-    transformorigin: center;
-    transition: 160ms var(--ease-out-quad);
+
+  .nav-btn-content {
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 18px;
+    height: 48px;
+    padding: 0;
   }
 }
-/* 1. Ensure the main nav is fixed to the top on mobile */
-@media (max-width: 768px) {
-  nav {
-    position: sticky !important; /* Forces it to stay at the top */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 64px;
-    z-index: 1000;
-    border-bottom: 1px solid var(--header-border);
+
+/* Safety for very small screens (430px and below) */
+@media (max-width: 480px) {
+  .nav-btn-white,
+  .nav-btn-black {
+    padding: 0 8px;
+    font-size: 12px;
+  }
+  .logo {
+    height: 16px;
   }
 }
 /*
@@ -672,18 +633,23 @@ HERO SECTION
   overflow: visible;
   scrollbar-width: none;
 }
+/* Add this to sections containing horizontal scrolls */
+.product-team,
+.collaborate-across {
+  overflow: hidden;
+  width: 100%;
+}
+.page-module__x5b50W__underTheHoodAsset {
+  max-width: 100%;
+  height: auto; /* Ensures it scales proportionally */
+}
 @media (max-width: 1105px) {
   .card-container {
     overflow-x: auto;
+    width: auto; /* Change from 117vw to auto */
+    margin: 0 -24px; /* Use negative margins to touch edges instead of vw */
+    padding: 0 24px;
     scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    width: 117vw;
-    position: relative;
-    left: 50%;
-    margin-left: -67vw;
-    padding-inline: 20vw;
-    scroll-padding-inline: 2vw;
-    padding-right: 31px;
   }
 }
 .Image-module__CYTY7q__root {
@@ -745,11 +711,14 @@ HERO SECTION
 .product-direction {
   padding: 160px 0;
   background: linear-gradient(to bottom, #121314, #08090a);
+  overflow: hidden;
 }
+
 .product-direction-container {
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  overflow: hidden;
 }
 .top-text {
   display: flex;
@@ -1514,10 +1483,11 @@ HERO SECTION
   scrollbar-width: none;
   -ms-overflow-style: none;
 
-  width: 100vw;
   position: relative;
   left: 50%;
-  margin-left: -50vw;
+  width: calc(100% + 48px); /* 100% plus the safety area padding */
+
+  margin-left: -24px;
 
   /* symmetric padding = stable snapping */
   padding-inline: 20vw;
