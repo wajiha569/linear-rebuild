@@ -1473,27 +1473,38 @@ HERO SECTION
 .collaborate-card {
   display: flex;
   gap: 12px;
-
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-
   -webkit-overflow-scrolling: touch;
-
   scrollbar-width: none;
   -ms-overflow-style: none;
 
+  /* --- FULL SCREEN BREAKOUT --- */
+  width: 100vw;
   position: relative;
   left: 50%;
-  width: calc(100% + 48px); /* 100% plus the safety area padding */
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 
-  margin-left: -24px;
+  /* --- CONTENT ALIGNMENT --- */
+  /* This centers the first card and allows the last card to scroll to center */
+  padding-inline: calc(
+    50vw - 168px
+  ); /* 168px is half of your card width (336/2) */
+  scroll-padding-inline: calc(50vw - 168px);
+}
 
-  /* symmetric padding = stable snapping */
-  padding-inline: 20vw;
+/* Hide scrollbar for Chrome/Safari */
+.collaborate-card::-webkit-scrollbar {
+  display: none;
+}
 
-  /* snapping precision */
-  scroll-padding-inline: 20vw;
+/* Ensure cards don't shrink */
+.collaborate-card > .card-big {
+  flex: 0 0 auto;
+  scroll-snap-align: center; /* Snaps cards to the center of the screen */
 }
 @media (max-width: 1606px) {
   .collaborate-card {
