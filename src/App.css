@@ -1879,7 +1879,7 @@ footer {
 }
 @media (max-width: 623px) {
   .Main-heading-small {
-    align-text: start;
+    text-align: start;
     max-width: 300px;
   }
   .plan-perfect-container {

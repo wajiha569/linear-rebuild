@@ -932,7 +932,7 @@ function App() {
 
           <div className="specify-select">
             <div className='specify-select-text'>
-              <h3 class="specify-text">Ideate and specify<br /> what to build next</h3>
+              <h3 className="specify-text">Ideate and specify<br /> what to build next</h3>
               <div className='selections'>
                 <span className='active-select select-span'></span>
                 <p className='select-text active-text'>Collabrative documents</p>
@@ -1010,8 +1010,7 @@ function App() {
                         focusable="false"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
-                        fill="rgb(104, 204, 88)" // important!
-                      >
+                        fill="rgb(104, 204, 88)">
                         <use href="#Users" />
                       </svg>
                     </div>
